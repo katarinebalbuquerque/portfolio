@@ -156,7 +156,6 @@ header #scroll img {
 
 #art-menu img#logo {
     width: 80px;
-    height: 80px;
 }
 
 #art-menu nav,
@@ -533,10 +532,15 @@ footer {
     footer {
         width: Calc(100% - 6px);
         padding: 0 3px;
-    }
+    }    
 
     header #scroll img {
         display: none;
+    }
+
+    #art-menu {
+        padding-left: 20px;
+        padding-top: 20px;
     }
 
     #art-info h1 {
@@ -562,14 +566,14 @@ footer {
     }
 
     #art-menu nav ul {
-        width: 100%;
-        padding: 20px 10px;
+        width: Calc(100% - 40px);
+        padding: 20px;
         display: none;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         position: absolute;
-        top: 62px;
+        top: 82px;
         left: 0;
         background-color: #f5f5f5;
     }
@@ -580,6 +584,10 @@ footer {
 
     #art-menu nav ul li a {
         font-size: 1rem;
+    }
+
+    #art-menu img#logo {
+        width: 60px;
     }
 
     #content-sobre #art-descricao {
@@ -610,7 +618,7 @@ footer {
 
     #content-sobre #art-descricao {
         width: 300px;
-    }    
+    }
 }
 
 @media(max-width: 991px) {

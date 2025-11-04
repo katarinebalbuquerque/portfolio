@@ -52,6 +52,7 @@ a:active {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 ul li {
@@ -609,7 +610,7 @@ footer {
 
     #content-sobre #art-descricao {
         width: 300px;
-    }
+    }    
 }
 
 @media(max-width: 991px) {

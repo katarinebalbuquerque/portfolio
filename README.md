@@ -2,7 +2,7 @@
 
 <img width="100%" src="./banner.png" alt="Banner"/><br/>
 
-### Acesse o meu portfólio: [ Portfólio](https://katarinebalbuquerque.github.io/portfolio/)
+### Acesse o meu portfólio: <a target="_BLANK" href="https://katarinebalbuquerque.github.io/portfolio/">Portfólio</a>
 
 ### I. Sobre o projeto
 

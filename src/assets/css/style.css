@@ -7,6 +7,13 @@
     margin: 0 auto;
 }
 
+/* IMAGEM */
+
+.imagem {
+    padding: 20px 0;
+    text-align: center;
+}
+
 /* TITULO H2 */
 
 h2 {
@@ -90,8 +97,8 @@ h5 {
     padding: 50px 0;
     background-color: #1c1c1c;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-position: 100% center;
+    background-size: cover;
 }
 
 #info #scroll {
@@ -163,9 +170,6 @@ h5 {
 #sobre { 
     width: auto;   
     background-color: #1c1c1c;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;    
 }
 
 #sobre h2 {

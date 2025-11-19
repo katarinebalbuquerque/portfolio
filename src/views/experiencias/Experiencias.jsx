@@ -7,6 +7,9 @@ const Experiencias = () =>{
             <div className="container">
                 <h2 className="titulo-h2">Experiências</h2>
                 <div className="barra"></div>
+                <section className="imagem">
+                    <img width="150" src="./images/experiencia.png" alt="Habilidades"/>
+                </section>
                 <div className="row">
                     <Experiencia
                         data="set/ 2024 à out/ 2025"

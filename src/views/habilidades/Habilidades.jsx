@@ -7,6 +7,9 @@ const Habilidades = () => {
             <div className="container">
                 <h2 className="titulo-h2">Habilidades</h2>
                 <div className="barra"></div>
+                <section className="imagem">
+                    <img width="150" src="./images/habilidades.png" alt="Habilidades"/>
+                </section>
                 <div className="row">
                     <Habilidade titulo="FRONT-END">
                         <Item nome="HTML5"/>

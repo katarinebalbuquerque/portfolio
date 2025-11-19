@@ -6,6 +6,9 @@ const Formacao = () => {
             <div className="container">
                 <h2 className="titulo-h2">Formação</h2>
                 <div className="barra"></div>
+                <section className="imagem">
+                    <img width="150" src="./images/formacao.png" alt="Habilidades"/>
+                </section>
                 <div className="row">
                     <Curso
                         local="Universidade Estácio de Sá"

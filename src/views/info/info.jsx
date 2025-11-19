@@ -1,6 +1,6 @@
 const Info = () => {
     return (
-        <section id="info">
+        <section id="info" style={{backgroundImage:`url(./images/banner-info.png)`}}>
             <div className="container">
                 <div className="row">
                     <article id="perfil" className="col-6 col-sd-12">

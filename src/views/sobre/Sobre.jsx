@@ -1,6 +1,6 @@
 const Sobre = () => {
     return (
-        <section id="sobre" className="col-12">
+        <section id="sobre" className="col-12" style={{backgroundImage:`url(./images/banner.png)`}}>
             <div className="container">
                 {/* <h2>Sobre Mim</h2>
                 <div className="barra"></div> */}

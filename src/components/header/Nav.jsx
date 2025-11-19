@@ -4,7 +4,7 @@ const Nav = () => {
             <div className="container">
                 <div className="row">
                     <section id="logo" className="col col-md-12 col-sd-12">
-                        <img width="60" src="/images/logo-branco.png" alt="Logo"/>
+                        <img width="60" src="./images/logo-branco.png" alt="Logo"/>
                     </section>
                     <section className="col-6 col-md-6 col-sd-12">
                         <ul id="menu" className="row">

@@ -4,7 +4,7 @@ const Info = () => {
             <div className="container">
                 <div className="row">
                     <article id="perfil" className="col-6 col-sd-12">
-                        <img width="300" src="/images/perfil.png" alt="Perfil" />
+                        <img width="300" src="./images/perfil.png" alt="Perfil" />
                     </article>
                     <article id="descricao" className="col-6 col-sd-12">
                         <h2 id="nome-h2">Katarine Albuquerque</h2>
@@ -21,7 +21,7 @@ const Info = () => {
                     </article>
                 </div>
                 <section id="scroll">
-                    <img width="55" src="/images/scroll2.png" alt="Scroll" />
+                    <img width="55" src="./images/scroll2.png" alt="Scroll" />
                 </section>
             </div>
         </section>

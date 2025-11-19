@@ -88,7 +88,7 @@ h5 {
 
 #info {
     padding: 50px 0;
-    background: #1c1c1c url('/images/banner-info.png') no-repeat 100% center;
+    background: #1c1c1c url('./images/banner-info.png') no-repeat 100% center;
     background-size: cover;
 }
 
@@ -160,7 +160,7 @@ h5 {
 
 #sobre { 
     width: auto;   
-    background: #1c1c1c url('/images/banner.png') no-repeat center;
+    background: #1c1c1c url('./images/banner.png') no-repeat center;
     background-size: contain;    
 }
 

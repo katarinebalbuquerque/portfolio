@@ -399,6 +399,7 @@ h5 {
 #projetos .projeto img {
     width: 100%;
     border-bottom: 5px solid #2B5E57;
+    border-top-right-radius: 26px;
 }
 
 #projetos .projeto h4 {

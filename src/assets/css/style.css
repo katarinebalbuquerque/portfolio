@@ -382,7 +382,9 @@ h5 {
 #projetos .projeto {
     padding: 5px;
     border: 2px solid #b2f1e8;
-    border-radius: 5px;
+    border-width: 2px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

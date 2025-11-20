@@ -63,12 +63,7 @@ h5 {
 /* MENU */
 
 #nav .row {
-    width: 98.33%;
-    padding: 0;
-}
-
-#nav .row {
-    width: 98.33%;
+    width: 95%;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;

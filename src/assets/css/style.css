@@ -581,6 +581,16 @@ h5 {
         font-size: 11rem;
     }
 
+    #habilidades,
+    .hab,
+    #formacao,
+    #experiencias,
+    .exp,
+    #projetos,
+    #contatos {
+        padding: 10px 0;
+    }
+
     #projetos a,
     #projetos a:link,
     #projetos a:visited,

@@ -61,7 +61,7 @@ const Experiencias = () =>{
                         <Atividade nome="Atendimento ao Público"/>
                         <Atividade nome="Atendimento Telefônico"/>
                     </Experiencia>
-                    <div className="col-6 col-m-6 col-sd-12"></div>
+                    <div className="exp col-6 col-m-6 col-sd-12"></div>
                 </div>
             </div>
         </section>

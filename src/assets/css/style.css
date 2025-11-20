@@ -1,17 +1,22 @@
 /* BARRA */
 
 .barra {
-    width: 50px;
+    width: 70px;
     height: 4px;
     background-color: #2B5E57;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 /* IMAGEM */
 
 .imagem {
     padding: 20px 0;
+    margin: 0 auto;
     text-align: center;
+}
+
+.imagem img {
+    width: 120px;
 }
 
 /* TITULO H2 */
@@ -204,6 +209,7 @@ h5 {
 /* HABILIDADES */
 
 #habilidades {
+    padding: 20px 0;
     width: auto;   
     background-color: #1c1c1c;
 }
@@ -238,8 +244,10 @@ h5 {
     padding: 3px 6px;
     background-color: #b2f1e8;
     color: #000000;
-    border-radius: 8px;
-    font-size: 0.9rem;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 #habilidades .habilidade .itens span:hover {
@@ -319,8 +327,10 @@ h5 {
     padding: 3px 6px;
     background-color: #b2f1e8;
     color: #000000;
-    border-radius: 8px;
-    font-size: 0.9rem;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 #experiencias .experiencia .itens span:hover {
@@ -521,12 +531,34 @@ h5 {
 }
 
 @media(max-width: 586px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    
+    #nome-h2 {
+        font-size: 2.1rem;
+    }
+    
     .row {
         width: 93.3%;
         padding: 10px;
         gap: 10;
         justify-content: center;
         margin: 0 auto;
+    }
+
+    #info {
+        padding: 5px 0;
+    }
+
+    #info #scroll {
+        padding: 0;
+        display: none;
+    }
+
+    #sobre {
+        padding: 0;
+        height: auto;
     }
 
     #sobre #descricao p {

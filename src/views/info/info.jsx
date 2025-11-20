@@ -12,7 +12,7 @@ const Info = () => {
                         <h4>Desenvolvedora</h4>
                         <h1><strong>FRONT-END</strong></h1>
                         <br />
-                        <h5>❮ Bem vindo(a) ao meu <strong>Portfólio</strong>! /❯</h5>
+                        <h5>❮ Bem vindo(a) <br/>ao meu <strong>Portfólio</strong>! /❯</h5>
                         <br />
                         <section id="buttons" className="row">
                             <a href="#projetos">Meus Projetos</a>

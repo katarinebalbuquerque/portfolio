@@ -225,12 +225,13 @@ h5 {
 #habilidades .habilidade {
     background-color: transparent;
     border: 2px solid #b2f1e8;
-    border-radius: 5px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
 }
 
 #habilidades .hab {
     background: none;
-    border-width: 5px;
+    border-width: 2px;
     border-color: transparent;
 }
 
@@ -271,7 +272,8 @@ h5 {
 
 #formacao .curso {
     border: 2px solid #b2f1e8;
-    border-radius: 5px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
 }
 
 #formacao h2 {
@@ -314,7 +316,8 @@ h5 {
 
 #experiencias .experiencia {
     border: 2px solid #b2f1e8;
-    border-radius: 5px;   
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;   
 }
 
 #experiencias .experiencia .itens {
@@ -387,7 +390,7 @@ h5 {
 
 #projetos .proj {
     background: none;
-    border-width: 5px;
+    border-width: 2px;
     border-color: transparent;
 }
 

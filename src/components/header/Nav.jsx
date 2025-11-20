@@ -8,7 +8,7 @@ const Nav = () => {
                     </section>
                     <section className="col-6 col-md-6 col-sd-12">
                         <ul id="menu" className="row">
-                            <li><a href="/">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#sobre">Sobre</a></li>
                             <li><a href="#projetos">Projetos</a></li>
                             <li><a href="#contatos">Contato</a></li>

@@ -8,7 +8,7 @@ const Experiencias = () =>{
                 <h2 className="titulo-h2">Experiências</h2>
                 <div className="barra"></div>
                 <section className="imagem">
-                    <img width="150" src="./images/experiencia.png" alt="Habilidades"/>
+                    <img width="150" src="./images/experiencias.png" alt="Habilidades"/>
                 </section>
                 <div className="row">
                     <Experiencia

@@ -36,7 +36,7 @@ const Projeto = () => {
                         />
                     </ul>
                     <article id="projeto__link">
-                        <Link target="_blank" href="/projetos">Veja Mais Projetos &#10095;</Link>
+                        <Link href="/projetos">Veja Mais Projetos &#10095;</Link>
                     </article>
                 </section>
             </Card>

@@ -17,7 +17,7 @@ const Nav = () => {
             <Container>
                 <section id="nav__content" className="row">
                     <article className="col-3">
-                        <a href="/"><img width="150" src="./images/logo.png" alt="Logo"/></a>
+                        <Link href="/"><img width="150" src="./images/logo.png" alt="Logo"/></Link>
                         <button id="nav__button" type="button" onClick={handlerAbrirFecharMenu}>
                             <span></span>
                             <span></span>

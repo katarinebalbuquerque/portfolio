@@ -1,0 +1,1297 @@
+[00:00:04.105] Server  LOG      ✓ Ready in 2.9s
+[00:00:07.495] Server  LOG      ○ Compiling /projetos ...
+[00:00:09.833] Server  LOG     [{...},{...},{...},{...},{...}]
+[00:00:09.858] Server  ERROR   Each child in a list should have a unique "key" prop.
+
+Check the render method of `Section`. It was passed a child from Projetos. See https://react.dev/link/warning-keys for more information.
+[00:00:11.824] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:00:11.824] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:00:11.824] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Section`.  It was passed a child from Projetos.
+[00:00:11.824] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:01:20.222] Server  LOG      ✓ Compiled in 74ms
+[00:01:20.372] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:01:20.372] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:01:24.256] Server  LOG     [{...},{...},{...},{...},{...}]
+[00:01:26.492] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:01:26.492] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:01:27.008] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:02:02.999] Server  LOG      ✓ Compiled in 86ms
+[00:02:08.731] Server  LOG     [{...},{...},{...},{...},{...}]
+[00:02:11.286] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:02:11.286] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:02:11.286] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:02:59.769] Server  LOG      ✓ Compiled in 69ms
+[00:02:59.847] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:02:59.847] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:03:03.962] Server  LOG     [{...},{...},{...},{...},{...}]
+[00:03:06.235] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:03:06.236] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:03:06.236] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:03:49.017] Server  LOG      ✓ Compiled in 72ms
+[00:03:49.165] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:03:49.165] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:03:53.485] Server  LOG     [{...},{...},{...},{...},{...},{...},{...},{...}]
+[00:03:55.456] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:03:55.457] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:03:55.457] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 5
+[00:03:55.457] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 5
+[00:03:55.457] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 5
+[00:03:55.457] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:04:07.100] Server  LOG      ✓ Compiled in 86ms
+[00:04:08.154] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:04:08.154] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:04:08.154] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 5
+[00:04:08.154] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 5
+[00:04:08.154] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 5
+[00:04:20.200] Server  LOG      ✓ Compiled in 54ms
+[00:04:21.169] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:04:21.169] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:04:21.169] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 5
+[00:04:21.169] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 5
+[00:04:21.169] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 5
+[00:04:27.050] Server  LOG      ✓ Compiled in 48ms
+[00:04:36.940] Server  LOG      ✓ Compiled in 220ms
+[00:04:37.131] Browser ERROR   ./src/app/projetos/page.js:17:1
+Ecmascript file had an error
+  15 | import { projetos } from "@/data/data"; 
+  16 |
+> 17 | "use client";
+     | ^^^^^^^^^^^^^
+  18 |
+  19 | const Projetos = () => {
+  20 |     
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:04:37.131] Browser ERROR   ./src/app/projetos/page.js:14:10
+Ecmascript file had an error
+  12 | import Habilidade from "@/components/habilidade/Habilidade";
+  13 | import Destaque from "@/components/destaque/Destaque";
+> 14 | import { useState } from "react";
+     |          ^^^^^^^^
+  15 | import { projetos } from "@/data/data"; 
+  16 |
+  17 | "use client";
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:04:44.802] Server  LOG      ✓ Compiled in 174ms
+[00:04:45.326] Server  LOG     [{...},{...},{...},{...},{...}]
+[00:04:47.189] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:04:47.189] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:04:47.189] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:04:53.635] Server  LOG      ✓ Compiled in 97ms
+[00:04:54.156] Browser LOG     [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:04:54.156] Browser LOG     [2;38;2;124;124;124m%s[0m [{"descricao":"Adiciona novos usuários com login e senha a uma lista temporária (dados), exibindo uma mensagem de sucesso ou erro. Verifica se o login e a senha inseridos correspondem a algum usuário cadastrado na lista. Garante que os campos estejam preenchidos antes de cadastrar ou autenticar. Mostra mensagens dinâmicas na tela para informar o resultado das ações.","id":"1","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/login/login.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/login","titulo":"Tela de Login"},{"descricao":"Realiza operações básicas: soma, subtração, multiplicação e divisão. Utiliza JavaScript para processar os cálculos em tempo real. Interface construída com HTML e CSS, garantindo usabilidade e visual limpo. Com eventos, funções e manipulação de dados no front-end.","id":"2","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/JavaScript/refs/heads/main/calculadora/calculadora.png","link":"https://github.com/katarinebalbuquerque/JavaScript/tree/main/calculadora","titulo":"Calculadora"},{"descricao":"Cadastrar, listar, atualizar e excluir produtos com nome, quantidade, preço e imagem. Inclui upload de imagem. Exibe informações completas do produto e calcula o subtotal automaticamente. Interface moderna e responsiva, com navegação intuitiva entre as páginas. API que manipula os dados vindos do banco de dados MySQL.","id":"3","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/ReactJs/refs/heads/main/compras/compras/images.png","link":"https://github.com/katarinebalbuquerque/ReactJs/tree/main/compras","titulo":"Organizar Compras"},{"descricao":"Projeto simples que demonstra o uso de Context API para controlar o estado da aplicação e CSS modules para uma melhor organização para layout responsivo e bem estruturado.","id":"4","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-organizador-de-tarefas/refs/heads/main/image.png","link":"https://github.com/katarinebalbuquerque/reactjs-organizador-de-tarefas","titulo":"Organizar Tarefas"},{"descricao":"Navegação entre páginas, uso de API fictícia em Json, controle de estados da aplicação e layout responsivo e organizado.","id":"5","imagem":"https://raw.githubusercontent.com/katarinebalbuquerque/reactjs-sabor-da-terra/refs/heads/main/sabor-da-terra.png","link":"https://github.com/katarinebalbuquerque/reactjs-sabor-da-terra","titulo":"Sabor da Terra App"}]
+[00:04:58.899] Server  LOG      ✓ Compiled in 88ms
+[00:06:13.415] Server  LOG      ✓ Compiled in 104ms
+[00:06:20.307] Server  LOG      ✓ Compiled in 70ms
+[00:06:33.301] Server  LOG      ✓ Compiled in 58ms
+[00:07:45.012] Server  LOG      ✓ Compiled in 95ms
+[00:07:54.617] Server  LOG      ✓ Compiled in 88ms
+[00:09:05.590] Server  LOG      ✓ Compiled in 64ms
+[00:09:41.038] Server  LOG      ✓ Compiled in 62ms
+[00:09:50.478] Server  LOG      ✓ Compiled in 67ms
+[00:09:58.876] Server  LOG      ✓ Compiled in 43ms
+[00:10:41.943] Server  LOG      ✓ Compiled in 175ms
+[00:11:23.730] Server  LOG      ✓ Compiled in 49ms
+[00:11:32.503] Server  LOG      ✓ Compiled in 28ms
+[00:11:46.749] Server  LOG      ✓ Compiled in 103ms
+[00:12:07.218] Server  LOG      ✓ Compiled in 50ms
+[00:12:26.089] Server  LOG      ✓ Compiled in 115ms
+[00:15:51.917] Server  LOG      ✓ Compiled in 72ms
+[00:16:02.086] Server  LOG      ✓ Compiled in 40ms
+[00:17:04.500] Server  LOG      ✓ Compiled in 73ms
+[00:17:30.749] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:22:31.407] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:23:49.938] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:24:55.151] Server  LOG      ✓ Compiled in 71ms
+[00:25:06.968] Server  LOG      ✓ Compiled in 55ms
+[00:25:30.033] Server  LOG      ✓ Compiled in 53ms
+[00:26:11.097] Server  LOG      ✓ Compiled in 85ms
+[00:26:24.831] Server  LOG      ✓ Compiled in 72ms
+[00:26:39.465] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:27:34.850] Server  LOG      ✓ Compiled in 48ms
+[00:27:41.235] Server  LOG      ✓ Compiled in 12ms
+[00:27:58.222] Server  LOG      ✓ Compiled in 46ms
+[00:28:04.125] Server  LOG      ✓ Compiled in 40ms
+[00:28:13.035] Server  LOG      ✓ Compiled in 56ms
+[00:28:59.818] Server  LOG      ✓ Compiled in 34ms
+[00:29:04.481] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:30:47.518] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:31:28.484] Server  LOG      ✓ Compiled in 58ms
+[00:31:56.517] Server  LOG      ✓ Compiled in 84ms
+[00:32:12.451] Server  LOG      ✓ Compiled in 44ms
+[00:32:28.519] Server  LOG      ✓ Compiled in 61ms
+[00:32:35.292] Server  LOG      ✓ Compiled in 27ms
+[00:32:42.270] Server  LOG      ✓ Compiled in 37ms
+[00:33:35.586] Server  LOG      ✓ Compiled in 23ms
+[00:34:30.436] Server  LOG      ✓ Compiled in 32ms
+[00:40:16.951] Server  LOG      ✓ Compiled in 61ms
+[00:41:28.452] Server  LOG      ✓ Compiled in 47ms
+[00:42:49.503] Server  LOG      ✓ Compiled in 68ms
+[00:43:39.569] Server  LOG      ✓ Compiled in 49ms
+[00:44:25.418] Server  LOG      ✓ Compiled in 66ms
+[00:44:34.152] Server  LOG      ✓ Compiled in 23ms
+[00:44:44.501] Server  LOG      ✓ Compiled in 64ms
+[00:44:52.426] Server  LOG      ✓ Compiled in 28ms
+[00:45:01.451] Server  LOG      ✓ Compiled in 29ms
+[00:45:10.818] Server  LOG      ✓ Compiled in 25ms
+[00:45:15.916] Server  LOG      ✓ Compiled in 70ms
+[00:45:26.767] Server  LOG      ✓ Compiled in 63ms
+[00:45:36.206] Server  LOG      ✓ Compiled in 46ms
+[00:46:26.418] Server  LOG      ✓ Compiled in 69ms
+[00:46:36.184] Server  LOG      ✓ Compiled in 35ms
+[00:46:43.810] Server  LOG      ✓ Compiled in 32ms
+[00:46:55.550] Server  LOG      ✓ Compiled in 45ms
+[00:47:20.489] Server  LOG      ✓ Compiled in 67ms
+[00:47:32.484] Server  LOG      ✓ Compiled in 51ms
+[00:47:41.466] Server  LOG      ✓ Compiled in 46ms
+[00:48:08.267] Server  LOG      ✓ Compiled in 66ms
+[00:48:43.101] Server  LOG      ✓ Compiled in 400ms
+[00:48:51.167] Server  LOG      ✓ Compiled in 61ms
+[00:49:26.649] Server  LOG      ✓ Compiled in 175ms
+[00:50:47.813] Server  LOG      ✓ Compiled in 127ms
+[00:57:33.283] Server  LOG      ✓ Compiled in 61ms
+[01:00:29.366] Server  LOG      ✓ Compiled in 68ms
+[01:00:48.143] Server  LOG      ✓ Compiled in 94ms
+[01:01:17.817] Server  LOG      ✓ Compiled in 110ms
+[01:01:34.555] Server  LOG      ✓ Compiled in 57ms
+[01:01:39.015] Server  LOG      ✓ Compiled in 37ms
+[01:02:03.266] Server  LOG      ✓ Compiled in 126ms
+[01:02:44.565] Server  LOG      ✓ Compiled in 64ms
+[01:03:51.832] Server  LOG      ✓ Compiled in 106ms
+[01:04:06.499] Server  LOG      ✓ Compiled in 91ms
+[01:05:06.669] Server  LOG      ✓ Compiled in 95ms
+[01:05:38.316] Server  LOG      ✓ Compiled in 65ms
+[01:05:56.330] Server  LOG      ✓ Compiled in 119ms
+[01:06:13.164] Server  LOG      ✓ Compiled in 118ms
+[01:06:33.332] Server  LOG      ✓ Compiled in 57ms
+[01:06:49.617] Server  LOG      ✓ Compiled in 103ms
+[01:07:33.337] Server  LOG      ✓ Compiled in 62ms
+[01:07:43.881] Server  LOG      ✓ Compiled in 178ms
+[01:07:54.902] Server  LOG      ✓ Compiled in 79ms
+[01:07:59.778] Server  LOG      ✓ Compiled in 41ms
+[01:10:15.965] Server  LOG      ✓ Compiled in 101ms
+[01:11:42.016] Server  LOG      ✓ Compiled in 66ms
+[01:12:29.666] Server  LOG      ✓ Compiled in 85ms
+[01:20:45.248] Server  LOG      ✓ Compiled in 80ms
+[01:21:22.588] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:22:16.602] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:23:17.600] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:27:33.333] Server  LOG      ✓ Compiled in 68ms
+[01:27:57.779] Server  LOG      ✓ Compiled in 133ms
+[01:30:10.295] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:30:55.658] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:32:48.851] Server  LOG      ✓ Compiled in 106ms
+[01:33:20.240] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:34:22.994] Server  LOG      ✓ Compiled in 138ms
+[01:34:50.413] Server  LOG      ✓ Compiled in 71ms
+[01:36:21.665] Server  LOG      ✓ Compiled in 55ms
+[01:37:22.682] Server  LOG      ✓ Compiled in 46ms
+[01:37:41.149] Server  LOG      ✓ Compiled in 61ms
+[01:39:09.806] Server  LOG      ✓ Compiled in 52ms
+[01:39:30.430] Server  LOG      ✓ Compiled in 61ms
+[01:39:45.913] Server  LOG      ✓ Compiled in 49ms
+[01:40:37.016] Server  LOG      ✓ Compiled in 61ms
+[01:40:53.898] Server  LOG      ✓ Compiled in 60ms
+[01:41:04.856] Server  LOG      ✓ Compiled in 79ms
+[01:41:09.854] Server  LOG      ✓ Compiled in 35ms
+[01:41:23.865] Server  LOG      ✓ Compiled in 53ms
+[01:41:31.114] Server  LOG      ✓ Compiled in 39ms
+[01:41:49.279] Server  LOG      ✓ Compiled in 82ms
+[01:44:16.038] Server  LOG      ✓ Compiled in 71ms
+[01:46:26.909] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:49:18.892] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:50:06.238] Server  LOG      ✓ Compiled in 42ms
+[01:51:56.565] Server  LOG      ✓ Compiled in 71ms
+[01:52:02.517] Server  LOG      ✓ Compiled in 35ms
+[01:52:07.432] Server  LOG      ✓ Compiled in 60ms
+[01:52:14.852] Server  LOG      ✓ Compiled in 53ms
+[01:52:19.620] Server  LOG      ✓ Compiled in 42ms
+[01:52:35.782] Server  LOG      ✓ Compiled in 89ms
+[01:52:55.252] Server  LOG      ✓ Compiled in 89ms
+[01:53:13.515] Server  LOG      ✓ Compiled in 53ms
+[01:55:45.205] Server  LOG      ✓ Compiled in 34ms
+[01:56:33.878] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:59:01.257] Server  LOG      ✓ Compiled in 59ms
+[02:01:36.257] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:06:21.399] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:08:00.703] Server  LOG      ✓ Compiled in 249ms
+[02:08:08.886] Server  LOG      ✓ Compiled in 91ms
+[02:08:21.373] Server  LOG      ✓ Compiled in 73ms
+[02:08:31.014] Server  LOG      ✓ Compiled in 54ms
+[02:09:21.457] Server  LOG      ✓ Compiled in 82ms
+[02:09:32.593] Server  LOG      ✓ Compiled in 69ms
+[02:10:00.313] Server  LOG      ✓ Compiled in 60ms
+[02:10:11.200] Server  LOG      ✓ Compiled in 77ms
+[02:10:27.196] Server  LOG      ✓ Compiled in 70ms
+[02:10:35.939] Server  LOG      ✓ Compiled in 31ms
+[02:12:29.131] Server  LOG      ✓ Compiled in 94ms
+[02:13:00.726] Server  LOG      ✓ Compiled in 76ms
+[02:15:06.247] Server  LOG      ✓ Compiled in 123ms
+[02:15:24.065] Server  LOG      ✓ Compiled in 50ms
+[02:15:38.131] Server  LOG      ✓ Compiled in 56ms
+[02:20:05.312] Server  LOG      ✓ Compiled in 27ms
+[02:24:40.519] Server  LOG      ✓ Compiled in 83ms
+[02:25:00.668] Server  LOG      ✓ Compiled in 22ms
+[02:25:55.259] Server  LOG      ✓ Compiled in 43ms
+[02:31:47.156] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:32:40.416] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:33:19.398] Server  LOG      ✓ Compiled in 81ms
+[02:33:25.696] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:33:44.693] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:37:14.181] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:38:45.885] Server  LOG      ✓ Compiled in 232ms
+[02:39:52.958] Server  LOG      ✓ Compiled in 166ms
+[02:40:57.205] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/projetos" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:40:59.296] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[02:41:50.163] Server  LOG      ✓ Compiled in 52ms
+[02:42:25.527] Server  LOG      ✓ Compiled in 68ms
+[02:44:10.646] Server  LOG      ✓ Compiled in 68ms
+[02:44:26.378] Server  LOG      ✓ Compiled in 89ms
+[02:44:31.563] Server  LOG      ✓ Compiled in 30ms
+[02:45:15.913] Server  LOG      ✓ Compiled in 66ms
+[02:46:07.944] Server  LOG      ✓ Compiled in 95ms
+[02:46:35.423] Server  LOG      ✓ Compiled in 71ms
+[02:47:09.466] Server  LOG      ✓ Compiled in 77ms
+[02:51:00.077] Server  LOG      ✓ Compiled in 193ms
+[02:51:17.295] Server  LOG      ✓ Compiled in 55ms
+[02:51:29.279] Server  LOG      ✓ Compiled in 55ms
+[02:52:25.940] Server  LOG      ✓ Compiled in 53ms
+[02:52:32.014] Server  LOG      ✓ Compiled in 47ms
+[02:55:19.524] Server  LOG      ✓ Compiled in 94ms
+[02:55:45.051] Server  LOG      ✓ Compiled in 57ms
+[02:56:48.653] Server  LOG      ✓ Compiled in 109ms
+[02:56:59.058] Server  LOG      ✓ Compiled in 98ms
+[02:57:44.889] Server  LOG      ✓ Compiled in 76ms
+[02:58:31.431] Server  LOG      ✓ Compiled in 24ms
+[02:58:40.939] Server  LOG      ✓ Compiled in 10ms
+[02:59:00.660] Server  LOG      ✓ Compiled in 16ms
+[02:59:19.176] Server  LOG      ✓ Compiled in 39ms
+[03:00:15.555] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+

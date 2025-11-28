@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ItemProjeto = ({ src, titulo, descricao, link }) => {
     return (
         <li className="projeto__item row">
@@ -7,7 +9,7 @@ const ItemProjeto = ({ src, titulo, descricao, link }) => {
             <section>
                 <h6>{ titulo }</h6>
                 <p>{ descricao }</p>
-                <a target="_blank" href={ link }>Saiba Mais &#10095;</a>
+                <Link target="_blank" href={ link }>Saiba Mais &#10095;</Link>
             </section>
         </li>
     )

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Card from "../card/Card";
 import ItemProjeto from "./ItemProjeto";
 
@@ -35,7 +36,7 @@ const Projeto = () => {
                         />
                     </ul>
                     <article id="projeto__link">
-                        <a target="_blank" href="/projetos">Veja Mais Projetos &#10095;</a>
+                        <Link target="_blank" href="/projetos">Veja Mais Projetos &#10095;</Link>
                     </article>
                 </section>
             </Card>

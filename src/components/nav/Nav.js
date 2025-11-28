@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Container from "../container/Container";
+import Link from "next/link";
 
 const Nav = () => {
 
@@ -25,10 +26,10 @@ const Nav = () => {
                     </article>
                     <article className="col-7">
                         <ul id="menu" className={aberto ? "row menu-aberto" : "row menu-fachado"}>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="#destaque">Destaque</a></li>
-                            <li><a href="/projetos">Projetos</a></li>
-                            <li><a href="#contato">Contato</a></li>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="#destaque">Destaque</Link></li>
+                            <li><Link href="/projetos">Projetos</Link></li>
+                            <li><Link href="#contato">Contato</Link></li>
                         </ul>
                     </article>
                 </section>

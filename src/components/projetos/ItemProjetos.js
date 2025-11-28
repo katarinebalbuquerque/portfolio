@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Card from "../card/Card";
 
 const ItensProjetos = ({ src, titulo, descricao, href }) => {
@@ -11,7 +12,7 @@ const ItensProjetos = ({ src, titulo, descricao, href }) => {
                     <br/>
                     <p>{ descricao }</p>
                     <br/>
-                    <a href={ href }>Saiba Mais</a> 
+                    <Link target="_blank" href={ href }>Saiba Mais</Link> 
                     <br/><br/>                    
                 </section>
             </Card>

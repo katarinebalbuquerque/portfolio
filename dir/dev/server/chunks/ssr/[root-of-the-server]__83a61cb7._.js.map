@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/katar/Desktop/react/PROJ-01/portfolio/src/app/blog/page.js"],"sourcesContent":["const Blog = () => {\r\n    return (\r\n        <section>Blog Page</section>\r\n    )\r\n}\r\n\r\nexport default Blog;"],"names":[],"mappings":";;;;;;AAAA,MAAM,OAAO;IACT,qBACI,8OAAC;kBAAQ;;;;;;AAEjB;uCAEe"}}]
-}

@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/d2bd85de9d460f69.css","style"]
+:HL["./images/perfil.png","image"]
+:HL["./images/projetos/img-001.png","image"]
+:HL["./images/projetos/img-002.png","image"]
+:HL["./images/projetos/img-003.png","image"]
+:HL["./images/projetos/img-004.png","image"]
+:HL["./images/email.png","image"]
+:HL["./images/linkedin.png","image"]
+:HL["./images/git.png","image"]
+:HL["./images/logo.png","image"]
+0:{"buildId":"yZiprL-lCZhB844t_XmVP","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

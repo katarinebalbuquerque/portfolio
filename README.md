@@ -8,7 +8,7 @@ Acesse o projeto: [Portfólio](https://katarinebalbuquerque.github.io/portfolio/
 
 ### 1. Sobre o projeto
 
-Desenvolvido em Next.js e React.js, com layout responsivo organizado entre uma e quatro colunas. Inclui navegação fluida entre seções e estrutura otimizada para apresentação clara dos conteúdos.
+Desenvolvido em Next.js e React.js, com layout responsivo organizado entre uma e três colunas. Inclui navegação fluida entre seções e páginas, com estrutura otimizada para apresentação clara dos conteúdos.
 
 ### 3. Instalação do projeto
 

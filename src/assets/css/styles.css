@@ -323,6 +323,10 @@ body {
 @media(max-width: 768px) {
     
     /* HEADER */
+
+    #header__banner {
+        height: 100px;
+    }    
     
     #header-blog__info {
         justify-content: space-between;
@@ -375,9 +379,13 @@ body {
         text-align: left;
     }
 
+    #header__info {
+        padding-top: 50px;
+    }
+
     #header__img_perfil {
         width: 100px;
-        top: 65%;
+        top: 35%;
     }
 
     .projeto__item {
